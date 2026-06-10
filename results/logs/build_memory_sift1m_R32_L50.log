@@ -1,0 +1,32 @@
+Starting index build with R: 32  Lbuild: 50  alpha: 1.2  #threads: 4
+L2: Using AVX2 distance computation DistanceL2Float
+Using only first 1000000 from file.. 
+Starting index build with 1000000 points... 
+0% of index build completed.10% of index build completed.20% of index build completed.30% of index build completed.40% of index build completed.50% of index build completed.60% of index build completed.70% of index build completed.80% of index build completed.90% of index build completed.Starting final cleanup..done. Link time: 51.5857s
+Index built with degree: max:32  avg:26.2299  min:2  count(deg<2):0
+Indexing time: 51.8455
+Not saving tags as they are not enabled.
+Time taken for save: 0.4998s.
+	Command being timed: "./apps/build_memory_index --data_type float --dist_fn l2 --data_path /home/dzq/ann_exp/data/sift1m/sift_base.bin --index_path_prefix /home/dzq/ann_exp/index/memory/sift1m_R32_L50 --max_degree 32 --Lbuild 50 --alpha 1.2 --num_threads 4"
+	User time (seconds): 206.79
+	System time (seconds): 1.32
+	Percent of CPU this job got: 391%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:53.18
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 772992
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 44
+	Minor (reclaiming a frame) page faults: 189787
+	Voluntary context switches: 395
+	Involuntary context switches: 69
+	Swaps: 0
+	File system inputs: 7016
+	File system outputs: 1212744
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

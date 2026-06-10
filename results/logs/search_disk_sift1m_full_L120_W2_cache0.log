@@ -1,0 +1,78 @@
+Search parameters: #threads: 4,  beamwidth: 2.
+Reading (with alignment) bin file /home/dzq/ann_exp/data/sift1m/sift_query.bin ...Metadata: #pts = 10000, #dims = 128, aligned_dim = 128... allocating aligned memory of 5120000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: /home/dzq/ann_exp/data/sift1m/sift_gt_full, size: 800008, cache_size: 800008
+Reading truthset file /home/dzq/ann_exp/data/sift1m/sift_gt_full ...
+Metadata: #pts = 10000, #dims = 10... 
+L2: Using AVX2 distance computation DistanceL2Float
+L2: Using AVX2 distance computation DistanceL2Float
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_compressed.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_compressed.bin... 
+Metadata: #pts = 1000000, #dims = 128...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin... 
+Metadata: #pts = 4, #dims = 1...
+done.
+Offsets: 4096 135176 135696 136220
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin... 
+Metadata: #pts = 256, #dims = 128...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin... 
+Metadata: #pts = 128, #dims = 1...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin... 
+Metadata: #pts = 129, #dims = 1...
+done.
+Loaded PQ Pivots: #ctrs: 256, #dims: 128, #chunks: 128
+Loaded PQ centroids and in-memory compressed vectors. #points: 1000000 #dim: 128 #aligned_dim: 128 #chunks: 128
+Disk-Index File Meta-data: # nodes per sector: 6, max node len (bytes): 644, max node degree: 32
+Opened file : /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_disk.index
+Setting up thread-specific contexts for nthreads: 4
+allocating ctx: 0x766108c9e000 to thread-id:130158956620864
+allocating ctx: 0x766108c8d000 to thread-id:130159131432896
+allocating ctx: 0x766107fef000 to thread-id:130158965017536
+allocating ctx: 0x766107fde000 to thread-id:130158973414208
+Loading centroid data from medoids vector data of 1 medoid(s)
+done..
+Caching 0 nodes around medoid(s)
+Caching 0...
+Level: 1. #nodes: 0, #nodes thus far: 0
+done
+Loading the cache list into memory....done.
+     L   Beamwidth             QPS    Mean Latency    99.9 Latency        Mean IOs    Mean IO (us)         CPU (s)       Recall@10
+===================================================================================================================================
+   120           2          247.67        16088.52       104694.00          128.20        15260.02          600.46           98.99
+Done searching. Now saving results 
+Writing bin: /home/dzq/ann_exp/result/disk_sift1m_full_L120_W2_cache0_120_idx_uint32.bin
+bin: #pts = 10000, #dims = 10, size = 400008B
+Finished writing bin.
+Writing bin: /home/dzq/ann_exp/result/disk_sift1m_full_L120_W2_cache0_120_dists_float.bin
+bin: #pts = 10000, #dims = 10, size = 400008B
+Finished writing bin.
+Clearing scratch
+	Command being timed: "./apps/search_disk_index --data_type float --dist_fn l2 --index_path_prefix /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4 --query_file /home/dzq/ann_exp/data/sift1m/sift_query.bin --gt_file /home/dzq/ann_exp/data/sift1m/sift_gt_full --recall_at 10 --search_list 120 --beamwidth 2 --num_nodes_to_cache 0 --num_threads 4 --result_path /home/dzq/ann_exp/result/disk_sift1m_full_L120_W2_cache0"
+	User time (seconds): 12.37
+	System time (seconds): 13.45
+	Percent of CPU this job got: 63%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:40.59
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162256
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 37106
+	Voluntary context switches: 1014433
+	Involuntary context switches: 10
+	Swaps: 0
+	File system inputs: 10255944
+	File system outputs: 1568
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

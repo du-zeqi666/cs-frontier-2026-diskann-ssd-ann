@@ -1,0 +1,71 @@
+Search parameters: #threads: 4,  beamwidth: 4.
+Reading (with alignment) bin file /home/dzq/ann_exp/data/sift1m/sift_query_eval800.fbin ...Metadata: #pts = 800, #dims = 128, aligned_dim = 128... allocating aligned memory of 409600 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: /home/dzq/ann_exp/data/sift1m/sift_gt_eval800, size: 32008, cache_size: 32008
+Reading truthset file /home/dzq/ann_exp/data/sift1m/sift_gt_eval800 ...
+Metadata: #pts = 800, #dims = 10... 
+L2: Using AVX2 distance computation DistanceL2Float
+L2: Using AVX2 distance computation DistanceL2Float
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_compressed.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_compressed.bin... 
+Metadata: #pts = 1000000, #dims = 128...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin... 
+Metadata: #pts = 4, #dims = 1...
+done.
+Offsets: 4096 135176 135696 136220
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin... 
+Metadata: #pts = 256, #dims = 128...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin... 
+Metadata: #pts = 128, #dims = 1...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin... 
+Metadata: #pts = 129, #dims = 1...
+done.
+Loaded PQ Pivots: #ctrs: 256, #dims: 128, #chunks: 128
+Loaded PQ centroids and in-memory compressed vectors. #points: 1000000 #dim: 128 #aligned_dim: 128 #chunks: 128
+Disk-Index File Meta-data: # nodes per sector: 6, max node len (bytes): 644, max node degree: 32
+Opened file : /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_disk.index
+Setting up thread-specific contexts for nthreads: 4
+allocating ctx: 0x7df28516a000 to thread-id:138480568489920
+allocating ctx: 0x7df285159000 to thread-id:138480411507648
+allocating ctx: 0x7df285148000 to thread-id:138480398699584
+allocating ctx: 0x7df285137000 to thread-id:138480424315712
+Loading centroid data from medoids vector data of 1 medoid(s)
+done..
+Dumping BFS cache list to /home/dzq/ann_exp/index/cache/bfs_cache_k10000.txt (num_nodes_to_cache=10000)
+Caching 10000...
+Level: 1.. #nodes: 1, #nodes thus far: 1
+Level: 2.. #nodes: 32, #nodes thus far: 33
+Level: 3.. #nodes: 880, #nodes thus far: 913
+Level: 4. #nodes: 9087, #nodes thus far: 10000
+done
+Dumped 10000 node ids. Exiting.
+Clearing scratch
+	Command being timed: "./apps/search_disk_index --data_type float --dist_fn l2 --index_path_prefix /home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4 --query_file /home/dzq/ann_exp/data/sift1m/sift_query_eval800.fbin --gt_file /home/dzq/ann_exp/data/sift1m/sift_gt_eval800 --recall_at 10 --search_list 80 --beamwidth 4 --num_nodes_to_cache 10000 --num_threads 4 --dump_cache_list /home/dzq/ann_exp/index/cache/bfs_cache_k10000.txt --result_path /tmp/_bfsdump"
+	User time (seconds): 0.55
+	System time (seconds): 0.24
+	Percent of CPU this job got: 175%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.45
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 158028
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 238
+	Minor (reclaiming a frame) page faults: 35933
+	Voluntary context switches: 329
+	Involuntary context switches: 7
+	Swaps: 0
+	File system inputs: 301904
+	File system outputs: 136
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

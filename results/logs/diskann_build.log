@@ -1,0 +1,149 @@
+[  3%] Building CXX object apps/utils/CMakeFiles/ivecs_to_bin.dir/ivecs_to_bin.cpp.o
+[  3%] Building CXX object apps/utils/CMakeFiles/fvecs_to_bvecs.dir/fvecs_to_bvecs.cpp.o
+[  4%] Building CXX object apps/utils/CMakeFiles/fvecs_to_bin.dir/fvecs_to_bin.cpp.o
+[  5%] Building CXX object src/CMakeFiles/diskann.dir/disk_utils.cpp.o
+[  5%] Building CXX object src/CMakeFiles/diskann.dir/abstract_data_store.cpp.o
+[  6%] Building CXX object apps/utils/CMakeFiles/tsv_to_bin.dir/tsv_to_bin.cpp.o
+[  7%] Building CXX object src/CMakeFiles/diskann.dir/distance.cpp.o
+[  7%] Building CXX object apps/utils/CMakeFiles/bin_to_tsv.dir/bin_to_tsv.cpp.o
+[  8%] Building CXX object apps/utils/CMakeFiles/float_bin_to_int8.dir/float_bin_to_int8.cpp.o
+[  9%] Building CXX object src/CMakeFiles/diskann_s.dir/ann_exception.cpp.o
+[ 11%] Building CXX object src/CMakeFiles/diskann_s.dir/abstract_data_store.cpp.o
+[ 14%] Building CXX object apps/utils/CMakeFiles/simulate_aggregate_recall.dir/simulate_aggregate_recall.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/diskann.dir/ann_exception.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/diskann.dir/index.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/diskann.dir/in_mem_graph_store.cpp.o
+[ 14%] Building CXX object src/CMakeFiles/diskann.dir/in_mem_data_store.cpp.o
+[ 15%] Building CXX object src/CMakeFiles/diskann.dir/linux_aligned_file_reader.cpp.o
+[ 16%] Building CXX object src/CMakeFiles/diskann.dir/math_utils.cpp.o
+[ 17%] Linking CXX executable simulate_aggregate_recall
+[ 18%] Building CXX object src/CMakeFiles/diskann_s.dir/disk_utils.cpp.o
+[ 19%] Building CXX object src/CMakeFiles/diskann_s.dir/distance.cpp.o
+[ 20%] Linking CXX executable ivecs_to_bin
+[ 21%] Linking CXX executable fvecs_to_bvecs
+[ 21%] Built target simulate_aggregate_recall
+[ 22%] Building CXX object src/CMakeFiles/diskann_s.dir/index.cpp.o
+[ 23%] Linking CXX executable bin_to_tsv
+[ 24%] Linking CXX executable tsv_to_bin
+[ 24%] Built target fvecs_to_bvecs
+[ 26%] Building CXX object src/CMakeFiles/diskann.dir/natural_number_map.cpp.o
+[ 26%] Linking CXX executable float_bin_to_int8
+[ 26%] Built target ivecs_to_bin
+[ 28%] Linking CXX executable fvecs_to_bin
+[ 28%] Building CXX object src/CMakeFiles/diskann_s.dir/in_mem_graph_store.cpp.o
+[ 28%] Built target tsv_to_bin
+[ 28%] Building CXX object src/CMakeFiles/diskann_s.dir/in_mem_data_store.cpp.o
+[ 28%] Built target bin_to_tsv
+[ 29%] Building CXX object src/CMakeFiles/diskann.dir/natural_number_set.cpp.o
+[ 29%] Built target fvecs_to_bin
+[ 30%] Building CXX object src/CMakeFiles/diskann_s.dir/linux_aligned_file_reader.cpp.o
+[ 30%] Built target float_bin_to_int8
+[ 31%] Building CXX object src/CMakeFiles/diskann.dir/memory_mapper.cpp.o
+[ 32%] Building CXX object src/CMakeFiles/diskann_s.dir/math_utils.cpp.o
+[ 33%] Building CXX object src/CMakeFiles/diskann_s.dir/natural_number_map.cpp.o
+[ 34%] Building CXX object src/CMakeFiles/diskann.dir/partition.cpp.o
+[ 35%] Building CXX object src/CMakeFiles/diskann_s.dir/natural_number_set.cpp.o
+[ 36%] Building CXX object src/CMakeFiles/diskann_s.dir/memory_mapper.cpp.o
+[ 37%] Building CXX object src/CMakeFiles/diskann_s.dir/partition.cpp.o
+[ 38%] Building CXX object src/CMakeFiles/diskann.dir/pq.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/diskann_s.dir/pq.cpp.o
+[ 39%] Building CXX object src/CMakeFiles/diskann.dir/pq_flash_index.cpp.o
+[ 40%] Building CXX object src/CMakeFiles/diskann.dir/scratch.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/diskann_s.dir/pq_flash_index.cpp.o
+[ 41%] Building CXX object src/CMakeFiles/diskann_s.dir/scratch.cpp.o
+[ 42%] Building CXX object src/CMakeFiles/diskann.dir/logger.cpp.o
+[ 43%] Building CXX object src/CMakeFiles/diskann.dir/utils.cpp.o
+[ 44%] Building CXX object src/CMakeFiles/diskann.dir/filter_utils.cpp.o
+[ 45%] Building CXX object src/CMakeFiles/diskann.dir/index_factory.cpp.o
+[ 46%] Building CXX object src/CMakeFiles/diskann.dir/abstract_index.cpp.o
+[ 47%] Building CXX object src/CMakeFiles/diskann.dir/pq_l2_distance.cpp.o
+[ 48%] Building CXX object src/CMakeFiles/diskann_s.dir/logger.cpp.o
+[ 49%] Building CXX object src/CMakeFiles/diskann_s.dir/utils.cpp.o
+[ 50%] Building CXX object src/CMakeFiles/diskann_s.dir/filter_utils.cpp.o
+[ 51%] Building CXX object src/CMakeFiles/diskann_s.dir/index_factory.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/diskann_s.dir/abstract_index.cpp.o
+[ 52%] Building CXX object src/CMakeFiles/diskann.dir/pq_data_store.cpp.o
+[ 53%] Building CXX object src/CMakeFiles/diskann_s.dir/pq_l2_distance.cpp.o
+[ 54%] Building CXX object src/CMakeFiles/diskann_s.dir/pq_data_store.cpp.o
+[ 55%] Linking CXX static library libdiskann.a
+[ 55%] Built target diskann
+[ 56%] Building CXX object apps/utils/CMakeFiles/rand_data_gen.dir/rand_data_gen.cpp.o
+[ 58%] Building CXX object apps/utils/CMakeFiles/vector_analysis.dir/vector_analysis.cpp.o
+[ 58%] Building CXX object apps/utils/CMakeFiles/count_bfs_levels.dir/count_bfs_levels.cpp.o
+[ 59%] Building CXX object apps/CMakeFiles/test_insert_deletes_consolidate.dir/test_insert_deletes_consolidate.cpp.o
+[ 60%] Building CXX object apps/utils/CMakeFiles/int8_to_float.dir/int8_to_float.cpp.o
+[ 61%] Building CXX object apps/utils/CMakeFiles/int8_to_float_scale.dir/int8_to_float_scale.cpp.o
+[ 62%] Building CXX object apps/CMakeFiles/test_streaming_scenario.dir/test_streaming_scenario.cpp.o
+[ 63%] Building CXX object apps/utils/CMakeFiles/uint8_to_float.dir/uint8_to_float.cpp.o
+[ 64%] Building CXX object apps/CMakeFiles/build_stitched_index.dir/build_stitched_index.cpp.o
+[ 65%] Building CXX object apps/utils/CMakeFiles/uint32_to_uint8.dir/uint32_to_uint8.cpp.o
+[ 66%] Building CXX object apps/CMakeFiles/search_memory_index.dir/search_memory_index.cpp.o
+[ 67%] Building CXX object apps/CMakeFiles/build_memory_index.dir/build_memory_index.cpp.o
+[ 68%] Building CXX object apps/CMakeFiles/search_disk_index.dir/search_disk_index.cpp.o
+[ 69%] Building CXX object apps/CMakeFiles/build_disk_index.dir/build_disk_index.cpp.o
+[ 70%] Building CXX object apps/CMakeFiles/range_search_disk_index.dir/range_search_disk_index.cpp.o
+[ 71%] Linking CXX executable uint32_to_uint8
+[ 72%] Linking CXX executable uint8_to_float
+[ 72%] Linking CXX executable int8_to_float_scale
+[ 72%] Linking CXX static library libdiskann_s.a
+[ 73%] Linking CXX executable int8_to_float
+[ 73%] Built target uint32_to_uint8
+[ 73%] Built target diskann_s
+[ 74%] Building CXX object apps/utils/CMakeFiles/gen_random_slice.dir/gen_random_slice.cpp.o
+[ 74%] Built target uint8_to_float
+[ 74%] Building CXX object apps/utils/CMakeFiles/calculate_recall.dir/calculate_recall.cpp.o
+[ 75%] Building CXX object apps/utils/CMakeFiles/compute_groundtruth.dir/compute_groundtruth.cpp.o
+[ 75%] Built target int8_to_float_scale
+[ 76%] Building CXX object apps/utils/CMakeFiles/compute_groundtruth_for_filters.dir/compute_groundtruth_for_filters.cpp.o
+[ 76%] Built target int8_to_float
+[ 77%] Building CXX object apps/utils/CMakeFiles/generate_pq.dir/generate_pq.cpp.o
+[ 78%] Linking CXX executable vector_analysis
+[ 78%] Built target vector_analysis
+[ 79%] Building CXX object apps/utils/CMakeFiles/partition_data.dir/partition_data.cpp.o
+[ 80%] Linking CXX executable calculate_recall
+[ 80%] Linking CXX executable gen_random_slice
+[ 80%] Built target calculate_recall
+[ 81%] Building CXX object apps/utils/CMakeFiles/partition_with_ram_budget.dir/partition_with_ram_budget.cpp.o
+[ 82%] Linking CXX executable generate_pq
+[ 82%] Built target gen_random_slice
+[ 83%] Building CXX object apps/utils/CMakeFiles/merge_shards.dir/merge_shards.cpp.o
+[ 83%] Built target generate_pq
+[ 83%] Building CXX object apps/utils/CMakeFiles/create_disk_layout.dir/create_disk_layout.cpp.o
+[ 84%] Linking CXX executable partition_data
+[ 85%] Linking CXX executable rand_data_gen
+[ 85%] Linking CXX executable partition_with_ram_budget
+[ 85%] Built target partition_data
+[ 86%] Building CXX object apps/utils/CMakeFiles/generate_synthetic_labels.dir/generate_synthetic_labels.cpp.o
+[ 86%] Built target rand_data_gen
+[ 87%] Linking CXX executable build_memory_index
+[ 88%] Building CXX object apps/utils/CMakeFiles/stats_label_data.dir/stats_label_data.cpp.o
+[ 89%] Linking CXX executable build_disk_index
+[ 90%] Linking CXX executable count_bfs_levels
+[ 90%] Built target partition_with_ram_budget
+[ 91%] Linking CXX executable create_disk_layout
+[ 92%] Linking CXX executable merge_shards
+[ 92%] Built target build_memory_index
+[ 92%] Built target build_disk_index
+[ 92%] Built target count_bfs_levels
+[ 92%] Built target merge_shards
+[ 92%] Built target create_disk_layout
+[ 93%] Linking CXX executable build_stitched_index
+[ 94%] Linking CXX executable range_search_disk_index
+[ 94%] Built target build_stitched_index
+[ 95%] Linking CXX executable test_insert_deletes_consolidate
+[ 96%] Linking CXX executable compute_groundtruth
+[ 96%] Linking CXX executable search_memory_index
+[ 96%] Built target range_search_disk_index
+[ 96%] Built target compute_groundtruth
+[ 96%] Built target test_insert_deletes_consolidate
+[ 97%] Linking CXX executable search_disk_index
+[ 97%] Built target search_memory_index
+[ 97%] Built target search_disk_index
+[ 98%] Linking CXX executable generate_synthetic_labels
+[ 99%] Linking CXX executable stats_label_data
+[ 99%] Built target generate_synthetic_labels
+[ 99%] Built target stats_label_data
+[100%] Linking CXX executable compute_groundtruth_for_filters
+[100%] Built target compute_groundtruth_for_filters
+[100%] Linking CXX executable test_streaming_scenario
+[100%] Built target test_streaming_scenario

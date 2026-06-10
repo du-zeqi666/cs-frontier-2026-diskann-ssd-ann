@@ -1,0 +1,77 @@
+Search parameters: #threads: 1,  beamwidth: 2.
+Reading (with alignment) bin file /home/dzq/ann_exp/data/random10k_query.fbin ...Metadata: #pts = 1000, #dims = 128, aligned_dim = 128... allocating aligned memory of 512000 bytes... done. Copying data to mem_aligned buffer... done.
+Opened: /home/dzq/ann_exp/data/random10k_gt, size: 80008, cache_size: 80008
+Reading truthset file /home/dzq/ann_exp/data/random10k_gt ...
+Metadata: #pts = 1000, #dims = 10... 
+L2: Using AVX2 distance computation DistanceL2Float
+L2: Using AVX2 distance computation DistanceL2Float
+Reading bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_compressed.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_compressed.bin... 
+Metadata: #pts = 10000, #dims = 128...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_pivots.bin... 
+Metadata: #pts = 4, #dims = 1...
+done.
+Offsets: 4096 135176 135696 136220
+Reading bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_pivots.bin... 
+Metadata: #pts = 256, #dims = 128...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_pivots.bin... 
+Metadata: #pts = 128, #dims = 1...
+done.
+Reading bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_pivots.bin ...
+Opening bin file /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_pq_pivots.bin... 
+Metadata: #pts = 129, #dims = 1...
+done.
+Loaded PQ Pivots: #ctrs: 256, #dims: 128, #chunks: 128
+Loaded PQ centroids and in-memory compressed vectors. #points: 10000 #dim: 128 #aligned_dim: 128 #chunks: 128
+DEBUG load_from_separate_paths: _disk_index_file="/home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_disk.index"
+DEBUG load_from_separate_paths: nr=9 nc=1 disk_nnodes=10000 disk_ndims=128 _num_points=10000
+Disk-Index File Meta-data: # nodes per sector: 6, max node len (bytes): 644, max node degree: 32
+Opened file : /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_disk.index
+Setting up thread-specific contexts for nthreads: 1
+allocating ctx: 0x7ad548ef8000 to thread-id:135056470357952
+Loading centroid data from medoids vector data of 1 medoid(s)
+done..
+Permutation map loaded: 10000 entries (round 2 phase 1, real 4KB block reorder)
+Block-aware cache: OFF (round 2 phase 2)
+Loading external cache list from /home/dzq/ann_exp/index/cache/random10k_bfs_k1000.txt
+load_cache_list(file): read 1000 node ids from /home/dzq/ann_exp/index/cache/random10k_bfs_k1000.txt
+Loading the cache list into memory....done.
+     L   Beamwidth             QPS    Mean Latency    99.9 Latency        Mean IOs    Mean IO (us)         CPU (s)       Recall@10
+===================================================================================================================================
+   120           2          195.26         5084.52        18243.00           43.80         4635.66          224.07           77.39
+Done searching. Now saving results 
+Writing bin: result/advanced_real_reorder/r10k_bacoff_L120_W2_120_idx_uint32.bin
+bin: #pts = 1000, #dims = 10, size = 40008B
+Finished writing bin.
+Writing bin: result/advanced_real_reorder/r10k_bacoff_L120_W2_120_dists_float.bin
+bin: #pts = 1000, #dims = 10, size = 40008B
+Finished writing bin.
+Clearing scratch
+	Command being timed: "/home/dzq/projects/DiskANN/build/apps/search_disk_index --data_type float --dist_fn l2 --index_path_prefix /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered --query_file /home/dzq/ann_exp/data/random10k_query.fbin --gt_file /home/dzq/ann_exp/data/random10k_gt --recall_at 10 --search_list 120 --beamwidth 2 --num_nodes_to_cache 1000 --num_threads 1 --perm_map_in /home/dzq/ann_exp/index/disk/random10k_R32_L50_B1_M1_reordered_disk_perm.bin --cache_list_in /home/dzq/ann_exp/index/cache/random10k_bfs_k1000.txt --block_aware_cache off --result_path result/advanced_real_reorder/r10k_bacoff_L120_W2"
+	User time (seconds): 0.57
+	System time (seconds): 0.29
+	Percent of CPU this job got: 16%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:05.21
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 31104
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 4330
+	Voluntary context switches: 36652
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 358432
+	File system outputs: 160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

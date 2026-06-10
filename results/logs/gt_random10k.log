@@ -1,0 +1,41 @@
+Reading bin file /home/dzq/ann_exp/data/random10k_query.fbin ...
+#pts in part = 1000, #dims = 128, size = 512000B
+Finished reading part of the bin file.
+Finished converting part data to float.
+Reading bin file /home/dzq/ann_exp/data/random10k_base.fbin ...
+#pts = 10000, #dims = 128
+Number of parts: 1
+Reading bin file /home/dzq/ann_exp/data/random10k_base.fbin ...
+#pts in part = 10000, #dims = 128, size = 5120000B
+Finished reading part of the bin file.
+Finished converting part data to float.
+Going to compute 10 NNs for 1000 queries over 10000 points in 128 dimensions using L2 distance fn. 
+Computed distances for queries: [0,512)
+Computed exact k-NN for queries: [0,512)
+Computed distances for queries: [512,1000)
+Computed exact k-NN for queries: [512,1000)
+Saving truthset in one file (npts, dim, npts*dim id-matrix, npts*dim dist-matrix) with npts = 1000, dim = 10, size = 80008B
+Finished writing truthset
+	Command being timed: "./apps/utils/compute_groundtruth --data_type float --dist_fn l2 --base_file /home/dzq/ann_exp/data/random10k_base.fbin --query_file /home/dzq/ann_exp/data/random10k_query.fbin --gt_file /home/dzq/ann_exp/data/random10k_gt --K 10"
+	User time (seconds): 1.90
+	System time (seconds): 0.29
+	Percent of CPU this job got: 817%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.27
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 50000
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 66
+	Minor (reclaiming a frame) page faults: 10713
+	Voluntary context switches: 134
+	Involuntary context switches: 74
+	Swaps: 0
+	File system inputs: 8488
+	File system outputs: 160
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

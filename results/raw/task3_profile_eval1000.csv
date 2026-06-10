@@ -1,0 +1,11 @@
+dataset,method,L,beamwidth,cache_nodes,threads,recall@10,qps,mean_latency_us,p999_latency_us,avg_dist_cmps,mean_ios,mean_io_us,io_time_ratio_pct,non_io_us,non_io_time_ratio_pct,max_rss_mb,fs_inputs,fs_outputs,elapsed,log
+sift1m_eval1000,memory,10,0,0,4,73.51,33647.43,115.66,4718.6,448.86,,,,,,686.75,7096,160,04.00,search_memory_sift1m_eval1000_L10.log
+sift1m_eval1000,memory,20,0,0,4,85.05,41274.31,94.73,858.16,647.99,,,,,,688.88,0,160,00.48,search_memory_sift1m_eval1000_L20.log
+sift1m_eval1000,memory,40,0,0,4,93.07,23852.93,164.32,835.96,1012.03,,,,,,686.62,0,160,00.43,search_memory_sift1m_eval1000_L40.log
+sift1m_eval1000,memory,80,0,0,4,97.35,14454.08,273.35,1262.07,1684.24,,,,,,688.88,0,160,00.47,search_memory_sift1m_eval1000_L80.log
+sift1m_eval1000,memory,120,0,0,4,98.49,9304.42,425.19,1677.2,2307.12,,,,,,687.0,0,160,00.61,search_memory_sift1m_eval1000_L120.log
+sift1m_eval1000,disk,10,2,0,4,76.68,1558.99,2532.73,4828.0,,21.67,2412.35,95.25,120.38,4.75,153.1,178968,160,00.92,search_disk_sift1m_eval1000_L10_W2_cache0.log
+sift1m_eval1000,disk,20,2,0,4,86.63,1120.15,3534.84,6239.0,,31.01,3372.82,95.42,162.02,4.58,151.22,248072,160,01.08,search_disk_sift1m_eval1000_L20_W2_cache0.log
+sift1m_eval1000,disk,40,2,0,4,93.59,704.6,5629.14,8159.0,,49.79,5343.87,94.93,285.27,5.07,150.96,398360,160,01.64,search_disk_sift1m_eval1000_L40_W2_cache0.log
+sift1m_eval1000,disk,80,2,0,4,97.69,375.5,10595.22,19845.0,,88.73,10032.84,94.69,562.38,5.31,152.75,709832,160,02.89,search_disk_sift1m_eval1000_L80_W2_cache0.log
+sift1m_eval1000,disk,120,2,0,4,98.69,280.24,14196.55,20436.0,,128.18,13479.71,94.95,716.84,5.05,150.88,1025456,160,03.78,search_disk_sift1m_eval1000_L120_W2_cache0.log

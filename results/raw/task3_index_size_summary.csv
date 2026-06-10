@@ -1,0 +1,10 @@
+method,component,size_mb,path
+memory,sift1m_R32_L50,103.87,/home/dzq/ann_exp/index/memory/sift1m_R32_L50
+memory,sift1m_R32_L50.data,488.28,/home/dzq/ann_exp/index/memory/sift1m_R32_L50.data
+memory,TOTAL,592.16,/home/dzq/ann_exp/index/memory
+disk,sift1m_R32_L50_B1_M4_disk.index,651.05,/home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_disk.index
+disk,sift1m_R32_L50_B1_M4_pq_compressed.bin,122.07,/home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_compressed.bin
+disk,sift1m_R32_L50_B1_M4_pq_pivots.bin,0.13,/home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_pq_pivots.bin
+disk,sift1m_R32_L50_B1_M4_sample_data.bin,48.74,/home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_sample_data.bin
+disk,sift1m_R32_L50_B1_M4_sample_ids.bin,0.38,/home/dzq/ann_exp/index/disk/sift1m_R32_L50_B1_M4_sample_ids.bin
+disk,TOTAL,822.37,/home/dzq/ann_exp/index/disk

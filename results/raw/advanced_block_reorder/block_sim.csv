@@ -1,0 +1,6 @@
+B,orig_unique_blocks_mean,reordered_unique_blocks_mean,compression_ratio,merged_pairs
+4,94.97,88.38,1.075,556
+8,94.66,85.19,1.111,963
+16,94.14,80.55,1.169,1731
+32,93.23,72.08,1.294,3255
+64,91.95,56.81,1.618,6242

@@ -1,0 +1,35 @@
+# DiskANN fork
+src/DiskANN/build/
+src/DiskANN/CMakeFiles/
+src/DiskANN/cmake-build-*/
+src/DiskANN/cmake_install.cmake
+src/DiskANN/Makefile
+src/DiskANN/CMakeCache.txt
+
+# Nested VCS / build cache
+**/.git/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/CMakeFiles/
+
+# Editor / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Local patch artifacts
+*.orig
+*.rej
+
+# DiskANN build outputs
+*.o
+*.a
+*.so
+*.dll
+*.dylib
+*.exe

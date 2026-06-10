@@ -1,0 +1,35 @@
+=== Phase 1.7 — Post-modification git state ===
+Date: 2026-06-08 23:50
+
+=== git status -sb ===
+## cpp_main...origin/cpp_main
+ M apps/search_disk_index.cpp
+ M include/pq_flash_index.h
+ M src/pq_flash_index.cpp
+
+=== git diff --stat ===
+ apps/search_disk_index.cpp | 79 ++++++++++++++++++++++++++++++++++++++--------
+ include/pq_flash_index.h   | 13 ++++++++
+ src/pq_flash_index.cpp     | 79 ++++++++++++++++++++++++++++++++++++++++++++++
+ 3 files changed, 158 insertions(+), 13 deletions(-)
+
+=== git rev-parse HEAD (pre-mod, since not committed yet) ===
+78256bbab4685e1774e78d331e081a153be26823
+
+=== build artifact mtime ===
+-rwxr-xr-x 1 dzq dzq 7335000 Jun  8 23:49 build/apps/search_disk_index
+
+=== sanity trace summary ===
+Trace file: /home/dzq/ann_exp/log/advanced_cache/trace_sanity.txt
+Lines: 191122
+Unique qids: 0
+miss count: 0
+read count: 0
+hit count:  0
+
+=== Re-computed trace stats (grep-based) ===
+Lines: 191122
+Unique qids: 1000  (range 0-999)
+miss count: 95561
+read count: 95561
+hit count:  0  (expected: cache_nodes=0 so no hit)

@@ -1,0 +1,58 @@
+# DiskANN Source State Snapshot
+
+> 上游工作区: /home/dzq/projects/DiskANN
+> 整理时间: 2026-06-10
+
+## 1. 仓库信息
+
+仓库: cs-frontier-2026-diskann-ssd-ann (本目录)
+DiskANN fork 上游: https://github.com/microsoft/DiskANN
+Fork 分支: cpp_main
+Fork 基线 commit: 78256bba (Avoid unlock twice when io_setup failed #597)
+工作区状态: 含 v5.1 实验修改(未提交)
+
+## 2. v5.1 改动文件 SHA256(本仓库 src/DiskANN/ 中)
+
+  2554a708cc31a0eaddce3df2ee617b0d379fa6995de86f39ae318822772353e3  80527 bytes  src/DiskANN/src/pq_flash_index.cpp
+  0b22c012acdcae6332720fb48a334f387f98b114b4526668da60a5c78295d0ab  2156 bytes  src/DiskANN/include/percentile_stats.h
+  432b1091e1a5f93c5ac3c0d111560d6077ea808c5df62479fd289b9131375bc1  12810 bytes  src/DiskANN/include/pq_flash_index.h
+  fc1c7b0963dc820924d0e6c3442130f5fee00a69604951ee2edde2c05bd3ee81  27640 bytes  src/DiskANN/apps/search_disk_index.cpp
+
+## 3. v4 原始文件 SHA256(patches/backup_v4/ 中,可与上面 v5.1 对比)
+
+  806fa87812d00108a10fd0311db54642b85b5a55f177a87b0faa86acfd0f1f23  75620 bytes  patches/backup_v4/pq_flash_index.cpp
+  f5ce3fc31a80fe89fb3fa5820e8e2663926f262bcb6ecab0d915ceb96cd6eae0  1780 bytes  patches/backup_v4/percentile_stats.h
+  432b1091e1a5f93c5ac3c0d111560d6077ea808c5df62479fd289b9131375bc1  12810 bytes  patches/backup_v4/pq_flash_index.h
+  7dc369a8e2ae41d5521da6f1ff1220055bb3c95cc831f055581a9c7547b73e83  26749 bytes  patches/backup_v4/search_disk_index.cpp
+
+## 4. Patch 校验
+
+  0975988259535c8b89e61cab90cfdb2ec1990d30a712610c4b0a74695921a9ed  37892 bytes  726 行  patches/diskann_advanced_v5.1.patch
+  69918c9b8871f1ae97ec742a6097769f602513fa2382686ad0c7f5b0b7ef2b9b  28105 bytes  545 行  patches/v4_baseline.patch
+
+## 5. git diff 统计(v4 → v5.1 增量)
+
+从 src/DiskANN/ 当前状态看(应与 patches/diskann_advanced_v5.1.patch 一致):
+
+  4 files changed, 471 insertions(+), 51 deletions(-)
+  apps/search_disk_index.cpp | 121 +++++++++++++--
+  include/percentile_stats.h |   5 +
+  include/pq_flash_index.h   |  23 +++
+  src/pq_flash_index.cpp     | 373 ++++++++++++++++++++++++++++++++++++++++------
+
+注:cpp_main 工作区未提交状态(Modified 状态),如需重置:
+  cd /home/dzq/projects/DiskANN
+  git checkout -- apps/search_disk_index.cpp include/percentile_stats.h include/pq_flash_index.h src/pq_flash_index.cpp
+  git apply /path/to/cs-frontier-2026-diskann-ssd-ann/patches/diskann_advanced_v5.1.patch
+
+## 6. 应用 patch 命令(参考,本次整理未执行)
+
+应用 v5.1:
+  cd /home/dzq/projects/DiskANN
+  git apply ../cs-frontier-2026-diskann-ssd-ann/patches/diskann_advanced_v5.1.patch
+
+回滚到 v4:
+  git apply -R ../cs-frontier-2026-diskann-ssd-ann/patches/v4_baseline.patch
+  # 或
+  git checkout -- apps/search_disk_index.cpp include/percentile_stats.h include/pq_flash_index.h src/pq_flash_index.cpp
+  cp ../cs-frontier-2026-diskann-ssd-ann/patches/backup_v4/* .

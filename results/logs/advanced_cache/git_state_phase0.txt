@@ -1,0 +1,10 @@
+=== Phase 0.3 — Initial git state (before any modification) ===
+Date: 2026-06-08 23:10
+
+Working directory: /home/dzq/projects/DiskANN
+Branch: cpp_main
+Status (clean):
+## cpp_main...origin/cpp_main
+
+HEAD: 78256bbab4685e1774e78d331e081a153be26823
+Tag: 0.7.0-36-g78256bba
