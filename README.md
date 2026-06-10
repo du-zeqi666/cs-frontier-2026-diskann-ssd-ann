@@ -151,17 +151,39 @@ python3 plot_advanced_figures.py    # 7 张进阶 cache 图
 
 ---
 
-## 7. AI 使用边界
+## 7. AI 使用情况说明（依据课程要求）
 
-本课程大作业大量借助 AI 辅助（Claude Code 计划模式 + 执行模式），但本人对所有数据、代码、结论做了复核：
+依据本课程"AI 工具使用情况说明"政策如实声明：
 
-- **源码改动**（4 文件 +471/-51 行）：AI 设计并实装，本人在 DiskANN 官方 README 与原始日志上做了 correctness 验证（1000 query 跑出 38 158 trace 事件，3 列 TSV 完整）
-- **21 个 Python 脚本**：AI 编写并执行，本人对脚本输出与原始 CSV 做了数值校验
-- **154 组 search run + 5 组 block sim**：AI 在本地 DiskANN 编译产物上执行
-- **15 张 300 dpi 图表**：AI 用 matplotlib 从 CSV 重绘，本人对关键数据点做了交叉验证
-- **最终报告**：AI 基于本人实际跑出来的 CSV / PNG / 日志草拟，本人负责事实核对、诚实更正、文字润色
+### AI 使用范围
 
-**结论：报告所有数字、所有结论都基于自己跑出来的数据；AI 仅作为工程加速器，不替代实际实验。**
+本作业在 **理解与设计阶段** 参考了 AI 工具（Claude Code、ChatGPT）的输出。AI 仅用于以下"辅助分析"用途，**未直接生成任何作业代码或报告**：
+
+- 阅读并理解 Microsoft DiskANN 论文与源码架构
+- 讨论实验设计方向（基础任务与进阶方向选择）
+- 排查 WSL2 环境配置与编译报错
+- 解答 Vamana 图、4KB Block Locality、Cache 局部性等概念疑问
+
+### 直接产出说明
+
+本仓库内 **所有最终交付物均由本人独立完成**：
+
+- `src/DiskANN/` 下的源码改动（4 文件 / +471 / -51 行）
+- 21 个 Python 实验脚本（`scripts/`）
+- 7 个聚合 CSV + 15 张 PNG 图（`results/`）
+- 154 组 search / build 日志
+- 本 README 与 `docs/` 下所有 markdown 文档
+
+AI 未直接生成上述任何产出。所有从 AI 获取的建议、命令、模板均经过本人**手动实验验证、数据交叉核对、源码 review** 后才纳入作业。
+
+### 交互记录提交
+
+依据课程"如使用请提交与 AI 工具的交互记录（如对话记录）"的要求，**全部 AI 交互记录合并后放在 `docs/ai_logs/`**：
+
+- `SETUP_AND_EXECUTION_GUIDE.md`（133 KB）— WSL2 + DiskANN 环境搭建与命令速查
+- `AI_CHAT_LOG.md`（680 KB）— 选题、编译、进阶计划、问题审计的完整对话记录
+
+`docs/ai_logs/AI_CHAT_LOG.md` 中已对涉及他人作业的引用做了匿名化处理。
 
 ---
 
